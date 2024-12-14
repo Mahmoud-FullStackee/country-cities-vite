@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite Form Example</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <form id="addressForm">
+    <label for="governorate">اختار المحافظة:</label>
+    <select id="governorate" name="governorate" onchange="updateAreas()">
+      <option value="">اختر محافظة</option>
+      <option value="cairo">القاهرة</option>
+      <option value="giza">الجيزة</option>
+      <option value="alexandria">الإسكندرية</option>
+    </select>
+
+    <br><br>
+
+    <label for="area">اختار المنطقة:</label>
+    <select id="area" name="area">
+      <option value="">اختر منطقة</option>
+    </select>
+  </form>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
