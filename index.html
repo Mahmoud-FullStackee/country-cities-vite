@@ -1,28 +1,72 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vite Form Example</title>
-  <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
-  <form id="addressForm">
-    <label for="governorate">اختار المحافظة:</label>
-    <select id="governorate" name="governorate" onchange="updateAreas()">
-      <option value="">اختر محافظة</option>
-      <option value="cairo">القاهرة</option>
-      <option value="giza">الجيزة</option>
-      <option value="alexandria">الإسكندرية</option>
-    </select>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Country and City</title>
+    <style>
+      :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
 
-    <br><br>
+        color-scheme: light dark;
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
 
-    <label for="area">اختار المنطقة:</label>
-    <select id="area" name="area">
-      <option value="">اختر منطقة</option>
-    </select>
-  </form>
-  <script type="module" src="/src/main.js"></script>
-</body>
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      #app {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Select Country and City</h2>
+      <ul>
+        <li>
+          <a href="/country-cities-vite/example-1"
+            >Example 1 - Select Country and City without any package</a
+          >
+        </li>
+        <li>
+          <a href="/country-cities-vite/example-2"
+            >Example 2 - Select Country and City with Choices.js Library</a
+          >
+        </li>
+        <li>
+          <a href="/country-cities-vite/example-3"
+            >Example 3 - Select Country and City with Select2 Library</a
+          >
+        </li>
+        <li>
+          <a href="/country-cities-vite/example-4"
+            >Example 4 - Select Country and City with REST API and Select2</a
+          >
+        </li>
+        <li>
+          <a href="/country-cities-vite/example-5"
+            >Example 5 - - Select Country and City with Json File and Select2</a
+          >
+        </li>
+      </ul>
+      <h2>Examples With Explanation</h2>
+      <ul>
+        <li><a href="">English Article</a></li>
+        <li><a href="">Arabic Article</a></li>
+      </ul>
+    </div>
+  </body>
 </html>

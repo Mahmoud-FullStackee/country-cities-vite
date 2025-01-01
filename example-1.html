@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Country and City</title>
+  <link rel="stylesheet" href="/src/example-1/style.css">
+</head>
+<body>
+  <div id="app">
+    <h2>Select Country and City without any package</h2>
+    
+    <label for="country">Country:</label>
+    <div class="custom-select" id="country-select">
+      <div class="selected">Select country</div>
+      <ul class="options"></ul>
+    </div>
+
+    <label for="city">City:</label>
+    <select id="city" disabled>
+      <option value="" disabled selected>Select City</option>
+    </select>
+  </div>
+  <script type="module" src="/src/example-1/main.js"></script>
+</body>
+</html>
